@@ -10,12 +10,12 @@ SERIAL=${SERIALSTRING#"$PREFIX"}
 echo "Device Serial Number: ${SERIAL}"
 
 # Create log file on the Desktop titled with the Device Serial Number
-mkdir /tmp/BlankState
-touch /tmp/BlankState/$SERIAL.log
+mkdir /home/ubuntu/BlankState
+touch /home/ubuntu/BlankState/$SERIAL.log
 echo "Log file generated..."
 
 # Display Log file
-open /tmp/BlankState
+open /home/ubuntu/BlankState
 
 # Confirm we are ready to erase
 CONT=""
